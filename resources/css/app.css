@@ -1,0 +1,27 @@
+/*@import 'tailwindcss';*/
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+/*@theme inline {*/
+/*    --font-sans: Instrument Sans, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';*/
+/*}*/
+
+body {
+    /*background-color: #447787;*/
+    background-color: #000000;
+    font-family: Roboto, sans-serif;
+
+    @media screen and (min-width: 1240px) {
+        background-image: url("/images/background-poster.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center top;
+    }
+}
+
+svg {
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
